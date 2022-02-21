@@ -12,7 +12,8 @@
 (function() {
     'use strict';
 
-    clear_all_interval = function() {
+    console.log('crawler-js-tools running.');
+    window.clear_all_interval = function() {
         // Get a reference to the last interval + 1
         const interval_id = window.setInterval(function(){}, Number.MAX_SAFE_INTEGER);
 
@@ -20,5 +21,5 @@
         for (let i = 1; i < interval_id; i++) {
             window.clearInterval(i);
         }
-    }
+    };
 })();
